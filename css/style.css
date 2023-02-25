@@ -10,15 +10,86 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+body {
+  max-width:800px;
+  margin: 0 auto;
+}
+
 img{
   display: block;
   margin: 0 auto;
 }
 
 svg {
-  max-width: 10%
+  max-width: 10%;
+  animation: myAnim 3s linear 0s infinite alternate both;
+}
+
+h1,.pickVeggie, .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content{
+  margin-top:10%;
+}
+
+#sun,#sowing,#icon {
+  width: 100%;
+  justify-content: center;
+  display: flex;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+
+/* ANIMATION */
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+/* END ANIMATION */
