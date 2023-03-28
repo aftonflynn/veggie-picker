@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Titan+One">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body class="xl:flex lg:justify-center">
+		<section class="mt-[5%]">
+			<h1 class="py-10 text-3xl">Garden Helper!</h1>
+			<img src="veggies.png" alt="Veggie picker friends" class="pb-10 sm:max-w-xl">
+			<div class="pickVeggie flex-wrap">
+			<input type="text" value="" class="w-full p-2 mb-5 placeholder:p-3" placeholder="e.g. tomato, apple">
+			<button type="button" name="button" class="w-full bg-yellow-500 border rounded-full text-1xl font-bold py-4 mb-6 ">Pick Veggie</button>
+			</div>
+		</section>
+
+		<section class="hidden flex justify-center flex-wrap my-[10%] xl:ml-[3%] xl:p-2">
+		<div id="icon" animation: myAnim 3s linear 0s infinite alternate both class="mb-3 justify-center"></div>
+		<h2 class="text-xl font-bold mb-3"></h2>
+		<p id="description" class="mb-3 xl:pl-10 xl:flex justify-start"></p>
+		<p id="sun" class="mb-3 xl:pl-10 xl:flex justify-start"></p>
+		<p id="sowing" class="mb-3 xl:pl-10 xl:flex justify-start"></p>
+		</section>
+		
+
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
+
